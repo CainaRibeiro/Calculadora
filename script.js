@@ -11,7 +11,7 @@ var n6 = 6;
 var n7 = 7;
 var n8 = 8;
 var n9 = 9;
-
+//NAO FUNCIONA AINDA
 
 function ca(){
     res.innerHTML = `Resultado`
