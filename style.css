@@ -50,10 +50,8 @@ img {
     width: 32px;
     height: 32px;
 }
-#raiz:hover {
-    background-color: lightgray;
-}
 .hover:hover {
     background-color: black;
     color: white;
+    cursor: pointer;
 }
