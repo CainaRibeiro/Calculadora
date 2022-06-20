@@ -2,16 +2,18 @@ var ca    = document.getElementById('ca');
 var res   = document.getElementById('res');
 var mais  = document.getElementById('mais')
 var somar = " "
-var n1 = 1;
-var n2 = 2;
-var n3 = 3;
-var n4 = 4;
-var n5 = 5;
-var n6 = 6;
-var n7 = 7;
-var n8 = 8;
-var n9 = 9;
+let num = [ document.getElementById('zero'),
+            document.getElementById('um'), 
+            document.getElementById('dois'), 
+            document.getElementById('tres'), 
+            document.getElementById('quatro'), 
+            document.getElementById('cinco'), 
+            document.getElementById('seis'), 
+            document.getElementById('sete'), 
+            document.getElementById('oito'), 
+            document.getElementById('nove')]
 //NAO FUNCIONA AINDA
+
 
 function ca(){
     res.innerHTML = `Resultado`
