@@ -4,54 +4,13 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body {
-    background-image: url(https://images.pexels.com/photos/6847584/pexels-photo-6847584.jpeg?cs=srgb&dl=pexels-j-lee-6847584.jpg&fm=jpg)
-}
-h1 {
-    padding: 50px;
-    text-align: center;
-}
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+.container
+{
     width: 300px;
-    height: 400px;
     margin: 0 auto;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 15px;
-    gap: 4px;
-    background-color: gray;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.384);
-}
-div {
     display: grid;
-    border: 2px solid black;
-    padding: 4px;
-    font-size: 26px;
-    text-align: center;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.164);
+    grid-template-columns: auto auto auto auto;
+    gap: 5px 5px;
 }
 
-#res {
-    grid-column: 1 / 5;
-}
-#mais {
-    grid-column: 4;
-    grid-row: 5/7;
-    justify-content: center;
-    align-items: center;
-}
-img {
-    width: 32px;
-    height: 32px;
-}
-.hover:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
