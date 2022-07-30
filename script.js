@@ -1,0 +1,69 @@
+var res         = document.querySelector('.resultado');
+var visor       = document.querySelector('.visor');
+
+var operador    = '';
+
+function deletar()
+{
+    res.innerHTML = '';
+    visor.innerHTML = '';
+}
+
+function addNumero(n)
+{
+    res.innerHTML += n;
+    visor.innerHTML += res.innerHTML;
+}
+
+function somar()
+{
+    salvarNumero = res.innerHTML;
+    res.innerHTML = '';
+    operador = '+';
+    visor.innerHTML += operador;
+}
+
+function multiplicar()
+{
+    salvarNumero = res.innerHTML;
+    res.innerHTML = '';
+    operador = '*';
+    visor.innerHTML += operador;
+}
+
+function dividir()
+{
+    salvarNumero = res.innerHTML;
+    res.innerHTML = '';
+    operador = '/';
+    visor.innerHTML += operador;
+}
+
+function subtrair()
+{
+    salvarNumero = res.innerHTML;
+    res.innerHTML = '';
+    operador = '-';
+    visor.innerHTML += operador;
+}
+
+function calcular()
+{
+    if(operador == '+')
+    {
+        res.innerHTML = Number(salvarNumero) + Number(res.innerHTML);
+    } 
+    else if(operador == '/')
+    {
+        res.innerHTML = Number(salvarNumero) / Number(res.innerHTML);
+    } 
+    else if(operador == '-')
+    {
+        res.innerHTML = Number(salvarNumero) - Number(res.innerHTML);
+    } 
+    else
+    {
+        res.innerHTML = Number(salvarNumero) * Number(res.innerHTML);
+    }
+
+}

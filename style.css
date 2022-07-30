@@ -4,13 +4,94 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body
+{
+    background-color:hsla(277,54%,73%,1);
+    background-image:
+    radial-gradient(at 11% 12%, hsla(277,100%,73%,1) 0px, transparent 50%),
+    radial-gradient(at 57% 35%, hsla(38,100%,75%,1) 0px, transparent 50%),
+    radial-gradient(at 91% 8%, hsla(244,100%,70%,1) 0px, transparent 50%),
+    radial-gradient(at 27% 60%, hsla(68,100%,66%,1) 0px, transparent 50%),
+    radial-gradient(at 90% 82%, hsla(212,100%,69%,1) 0px, transparent 50%);
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+main
+{
+    height: 84vh;
+}
+
+h1
+{
+    text-align: center;
+}
+.resultado
+{
+    text-align: right;
+    padding: 5px;
+    height: 45%;
+    font-family: 'Orbitron', sans-serif;
+}
 
 .container
 {
-    width: 300px;
-    margin: 0 auto;
+    width: 250px;
+    height: 300px;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 5px 5px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: lightgray;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.212);
+}
+
+.container-visor
+{
+    display: block;
+    width: 100%;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 1px solid black;
+    background-color: rgba(85, 107, 47, 0.253);
+    border-radius: 5px;
+}
+
+.btn
+{
+    font-family: 'Orbitron', sans-serif;
+}
+
+.btn-enter
+{
+    grid-column-start: 4;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.btn-adi
+{
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.visor
+{
+    height: 45%;
+    text-align: right;
+    padding: 5px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+footer
+{
+    text-align: center;
+    background-color: rgba(97, 171, 255, 0.432);
+    padding: 11px;
 }
 

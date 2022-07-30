@@ -6,27 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora    </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Projeto calculadora</h1>
-    <section class="container">
-        <input class="btn btn-divisao" type="button" value="/">
-        <input class="btn btn-multi" type="button" value="*">
-        <input class="btn btn-sub" type="button" value="-">
-        <input class="btn btn-adi" type="button" value="+">
-        <input class="btn btn7" type="button" value="7">
-        <input class="btn btn8" type="button" value="8">
-        <input class="btn btn9" type="button" value="9">
-        <input class="btn btn4" type="button" value="4">
-        <input class="btn btn5" type="button" value="5">
-        <input class="btn btn6" type="button" value="6">
-        <input class="btn btn1" type="button" value="1">
-        <input class="btn btn2" type="button" value="2">
-        <input class="btn btn3" type="button" value="3">
-        <input class="btn btn0" type="button" value="0">
-        <input class="btn btn-ponto" type="button" value=".">
-        <input class="btn btn-enter" type="button" value="Enter">
-    </section>
+        <h1>Projeto calculadora</h1>
+    <main>
+        <section class="container">
+            <div class="container-visor">
+                <div class="visor"></div>
+                <div class="resultado"></div>
+            </div>
+            <input class="btn btn-divisao" type="button" value="/" onclick="dividir()">
+            <input class="btn btn-multi" type="button" value="*" onclick="multiplicar()">
+            <input class="btn btn-sub" type="button" value="-" onclick="subtrair()">
+            <input class="btn btn-adi" type="button" value="+" onclick="somar()">
+            <input class="btn btn7" type="button" onclick="addNumero(7)" value="7">
+            <input class="btn btn8" type="button" onclick="addNumero(8)" value="8">
+            <input class="btn btn9" type="button" onclick="addNumero(9)" value="9">
+            <input class="btn btn4" type="button" onclick="addNumero(4)" value="4">
+            <input class="btn btn5" type="button" onclick="addNumero(5)" value="5">
+            <input class="btn btn6" type="button" onclick="addNumero(6)" value="6">
+            <input class="btn btn1" type="button" onclick="addNumero(1)" value="1">
+            <input class="btn btn2" type="button" onclick="addNumero(2)" value="2">
+            <input class="btn btn3" type="button" onclick="addNumero(3)" value="3">
+            <input class="btn btn0" type="button" onclick="addNumero(0)" value="0">
+            <input class="btn btn-ponto" type="button" value="." onclick="addNumero('.')">
+            <input class="btn btn-enter" type="button" value="Enter" onclick="calcular()">
+            <input type="button" value="ac" onclick="deletar()">
+        </section>
+    </main>
+    <footer>
+        <h3>Desenvolvido por <a href="https://github.com/CainaRibeiro" target="_blank">Cainã</a></h3>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
