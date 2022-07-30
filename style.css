@@ -33,6 +33,7 @@ h1
     height: 45%;
     font-family: 'Orbitron', sans-serif;
     word-wrap: break-word;
+    max-width: 100%;
 }
 
 .container
@@ -53,13 +54,14 @@ h1
 .container-visor
 {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: 60px;
     grid-column-start: 1;
     grid-column-end: 5;
     border: 1px solid black;
     background-color: rgba(85, 107, 47, 0.253);
     border-radius: 5px;
+    word-wrap: break-word;
 }
 
 .btn
@@ -84,6 +86,7 @@ h1
 .visor
 {
     height: 45%;
+    max-width: 100%;
     text-align: right;
     padding: 5px;
     font-family: 'Orbitron', sans-serif;
