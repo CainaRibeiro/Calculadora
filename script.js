@@ -9,10 +9,19 @@ function deletar()
     visor.innerHTML = '';
 }
 
+//FALTA DAR JEITO NO PONTO A CADA 3 NUMEROS
+
 function addNumero(n)
 {
     res.innerHTML += n;
-    visor.innerHTML += res.innerHTML;
+    visor.innerHTML += n;
+    console.log(formataValor(Number(res.innerHTML)))
+    
+}
+
+function formataValor(valor)
+{
+    return valor.toLocaleString('pt-br');
 }
 
 function somar()
