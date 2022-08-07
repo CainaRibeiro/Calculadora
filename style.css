@@ -15,11 +15,10 @@ body
     radial-gradient(at 90% 82%, hsla(212,100%,69%,1) 0px, transparent 50%);
     background-repeat: repeat;
     background-size: cover;
-
 }
 main
 {
-    height: 84vh;
+    min-height: 84vh;
 }
 
 h1
@@ -30,16 +29,15 @@ h1
 {
     text-align: right;
     padding: 5px;
-    height: 45%;
+    min-height: 45%;
     font-family: 'Orbitron', sans-serif;
-    word-wrap: break-word;
-    max-width: 100%;
+    word-break: break-all;
 }
 
 .container
 {
     width: 250px;
-    height: 300px;
+    min-height: 300px;
     margin: 50px auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -54,14 +52,12 @@ h1
 .container-visor
 {
     display: block;
-    max-width: 100%;
-    height: 60px;
+    min-height: 60px;
     grid-column-start: 1;
     grid-column-end: 5;
     border: 1px solid black;
     background-color: rgba(85, 107, 47, 0.253);
     border-radius: 5px;
-    word-wrap: break-word;
 }
 
 .btn
@@ -85,12 +81,11 @@ h1
 
 .visor
 {
-    height: 45%;
-    max-width: 100%;
+    min-height: 45%;
     text-align: right;
     padding: 5px;
     font-family: 'Orbitron', sans-serif;
-    word-wrap: break-word;
+    word-break: break-all;
 }
 
 footer
