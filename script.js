@@ -13,8 +13,8 @@ function deletar()
 
 function addNumero(n)
 {
-    res.innerHTML += n;
-    visor.innerHTML += n;
+    res.innerHTML += formataValor(Number(n));
+    visor.innerHTML += formataValor(Number(n));
     console.log(formataValor(Number(res.innerHTML)))
     
 }
